@@ -60,6 +60,11 @@ body {
   border-radius: 20px;
   padding-top: 1.2em;
   padding-bottom: 1.2em;
+  transition: background-color var(--main-transition);
+}
+
+.get-started:hover {
+  background-color: #FF9BDB;
 }
 
 .container {
@@ -337,11 +342,24 @@ footer .links a {
   color: white;
 }
 
+footer .links a:hover {
+  text-decoration: underline;
+}
+
 footer .social-links {
   flex-grow: 1;
   display: flex;
   justify-content: center;
   gap: 1em;
+}
+
+footer .social-links i {
+  transition: color var(--main-transition), border-color var(--main-transition);
+}
+
+footer .social-links i:hover {
+  color: var(--pink);
+  border-color: var(--pink);
 }
 
 footer .social-links i {
